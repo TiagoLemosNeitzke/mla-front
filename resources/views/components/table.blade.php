@@ -1,5 +1,5 @@
 <div>
-    <div class="overflow-x-hidden">
+    <div class="overflow-hidden">
         
         <table class="w-full divide-y divide-gray-300">
             <thead class="bg-gray-50">

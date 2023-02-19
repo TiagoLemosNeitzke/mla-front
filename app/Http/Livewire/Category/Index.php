@@ -21,6 +21,6 @@ class Index extends Component
     {
         $category->delete();
 
-        return redirect()->route('category.index')->with('message', 'Category has been deleted');
+        return redirect()->route('category.index')->with('message', 'Category has been deleted.');
     }
 }
