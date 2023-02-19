@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Livewire\Category\Index;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Category\Create;
+use App\Http\Livewire\Category\Update;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    
+    Route::get('category/index', Index::class)->name('category.index');
+    Route::get('category/create', Create::class)->name('category.create');
+    Route::get('category/{category}/edit', Update::class)->name('category.update');
 });
 
 require __DIR__.'/auth.php';
