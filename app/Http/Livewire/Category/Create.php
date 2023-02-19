@@ -40,5 +40,7 @@ class Create extends Component
     {
         $this->validate();
         $this->category->save();
+
+        return redirect()->route('category.index')->with('message','Category has created successfully');
     }
 }

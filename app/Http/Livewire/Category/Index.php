@@ -20,5 +20,7 @@ class Index extends Component
     public function destroy(Category $category)
     {
         $category->delete();
+
+        return redirect()->route('category.index')->with('message', 'Category has been deleted');
     }
 }

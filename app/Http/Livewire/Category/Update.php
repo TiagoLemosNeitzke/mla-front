@@ -33,5 +33,7 @@ class Update extends Component
     {
         $this->validate();
         $this->category->save();
+
+        return redirect()->route('category.index')->with('message', 'Category has updated successfully');
     }
 }

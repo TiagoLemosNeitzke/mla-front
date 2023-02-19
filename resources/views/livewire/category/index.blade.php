@@ -1,5 +1,7 @@
 <div class="py-12">
+ 
     <x-slot name="header">
+    
         <h2 class="text-xl font-semibold leading-tight text-gray-800">
             {{ __('Category Index') }}
         </h2>
@@ -11,6 +13,7 @@
                 {{ __('Create New Category') }}
             </x-nav-link>
         </div>
-        <x-table :items="$categories" :columns="[['label' => 'Name', 'column' => 'name']]" edit="category.update" :delete="true"/>
+        <x-table :items="$categories" :columns="[['label' => 'Name', 'column' => 'name']]" edit="category.update" :delete="true" />
     </div>
+   
 </div>
