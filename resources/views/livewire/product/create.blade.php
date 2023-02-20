@@ -61,6 +61,7 @@
                         </div>
                     </div>
                     @include('livewire.product.includes.general')
+                    @include('livewire.product.includes.photos')
                 </div>
             </div>
         </div>

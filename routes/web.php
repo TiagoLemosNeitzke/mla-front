@@ -38,7 +38,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/product/index', ProductIndex::class)->name('product.index');
     Route::get('/product/create', ProductCreate::class)->name('product.create');
-    Route::get('/product/{product}/edit', ProductIndex::class)->name('product.update');
+    Route::get('/product/{product}/edit', ProductCreate::class)->name('product.update');
 
 
 });
