@@ -15,7 +15,7 @@ class Create extends Component
     protected function rules()
     {
         return [
-            'product.name' => 'required|min:3|max:255|unique:product,name',
+            'product.name' => 'required|min:3|max:255|unique:products,name',
             'product.category_id' => 'required',
             'product.short_description' => 'required|min:3|max:255',
             'product.long_description' => 'required|min:3|max:255'
@@ -43,6 +43,6 @@ class Create extends Component
         $this->validate();
         $this->product->save();
 
-        return redirect()->route('product.index')->with('message', 'Product has crated successfully.');
+        //return redirect()->route('product.index')->with('message', 'Product has crated successfully.');
     }
 }
