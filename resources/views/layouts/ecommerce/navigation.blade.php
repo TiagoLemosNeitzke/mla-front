@@ -1,22 +1,22 @@
-<div x-data class="max-h[45px] sticky top-0 left-0 flex flex-row items-center justify-end bg-neutral-800">
-    <nav class="grap-x-6 flex flex-row items-center justify-between border border-neutral-white">
-        <a href="#" class="text-body-sm !font-bold text-neutral-white pl-4">
+<div x-data class="max-h[45px] sticky top-0 left-0 py-5 px-8 w-full flex flex-row items-center justify-end bg-neutral-800">
+    <nav class="gap-x-6 flex flex-row items-center">
+        <a href="#" class="text-body-md !font-bold text-neutral-white ml-4">
             Nós
         </a>
 
-        <a href="#" class="text-body-sm !font-bold text-neutral-white">
+        <a href="#" class="text-body-md !font-bold text-neutral-white">
             Cervejas
         </a>
 
-        <a href="#" class="text-body-sm !font-bold text-neutral-white">
+        <a href="#" class="text-body-md !font-bold text-neutral-white">
             Copos
         </a>
 
-        <a href="#" class="text-body-sm !font-bold text-neutral-white">
+        <a href="#" class="text-body-md !font-bold text-neutral-white">
             Roupas
         </a>
 
-        <a href="#" class="flex flex-row items-center space-x-2 text-body-sm !font-bold text-neutral-white">
+        <a href="#" class="flex flex-row items-center space-x-2 text-body-md !font-bold text-neutral-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-3 w-3"
                 viewBox="0 0 24 24">
                 <path

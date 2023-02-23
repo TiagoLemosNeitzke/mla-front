@@ -13,7 +13,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['/resources/css/ecommerce/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/ecommerce/app.css', 'resources/js/app.js'])
     
     @livewireStyles
     <style>
@@ -26,7 +26,7 @@
 <body class="flex min-h-screen flex-col overflow-hidden">
 
     @include('layouts.ecommerce.navigation')
-   {{--  <livewire:ecommerce.components.cart /> --}}
+   <livewire:ecommerce.components.cart />
 
     {{ $slot }}
 
