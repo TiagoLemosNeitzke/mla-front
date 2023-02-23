@@ -84,7 +84,7 @@ class Create extends Component
 
     public function deletePhoto(Photo $photo)
     {
-        //Storage::disk('s3')->delete($photo->path);
+        Storage::disk('local')->delete($photo->path);
         $photo = Photo::where('id', $photo->id)->first();
         $photo->delete();
         session()->flash('message', 'Photo deleted.');
