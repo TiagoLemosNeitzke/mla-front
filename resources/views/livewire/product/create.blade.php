@@ -62,8 +62,12 @@
                     </div>
                     @include('livewire.product.includes.general')
                     @include('livewire.product.includes.photos')
+                    @include('livewire.product.includes.skus')
                 </div>
             </div>
         </div>
     </div>
+    @if (session()->has('message'))
+        <x-notification :message="session('message')" />
+    @endif
 </div>

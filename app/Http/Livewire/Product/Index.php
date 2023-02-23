@@ -13,12 +13,15 @@ class Index extends Component
     public function render()
     {
         return view('livewire.product.index', [
-            'products' => Product::paginate(2)
+            'products' => Product::paginate(10)
         ]);
     }
 
-    public function destroy($product)
+    public function destroy(Product $product)
     {
-        return redirect()->route('product.index')->with('message', 'Product has been deleted.');
+        $product->skus()->delete();
+        $product->photos()->delete();
+        $product->delete();
+        session()->flash('message', 'Product has been deleted.');
     }
 }

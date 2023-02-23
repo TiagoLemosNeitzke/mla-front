@@ -32,6 +32,7 @@
 
         <!-- Page Content -->
         <main>
+        
             @if (session()->has('message'))
                 <x-notification :message="session('message')" />
             @endif
