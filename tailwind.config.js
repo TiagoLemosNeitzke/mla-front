@@ -11,8 +11,46 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Nunito', 'Inter', ...defaultTheme.fontFamily.sans],
             },
+        },
+        colors: {
+            neutral:{
+                white: "#FEFCFF",
+                100: "#F7F9FF",
+                200: "#C8CEE6",
+                400: "#4D5573",
+                800: "#232738",
+                dark: "#191A1F",
+            },
+        },
+
+        fontSize: {
+            "title-lg": ['36px', {
+                lineHeight: '44px',
+                fontWeight: '800',
+            }],
+            "title-md": ['54px', {
+                lineHeight: '65px',
+                fontWeight: '800',
+            }],
+            "title-sm": ['24px', {
+                lineHeight: '17px',
+                fontWeight: '700',
+            }],
+            "body-md": ['14px', {
+                lineHeight: '17px',
+                fontWeight: '400',
+            }],
+            "body-sm": ['12px', {
+                lineHeight: '15px',
+                fontWeight: '400',
+            }],
+            "btn": ['12px', {
+                lineHeight: '15px',
+                fontWeight: '700',
+                letterSpacing: '0.16rem'
+            }],
         },
     },
 
