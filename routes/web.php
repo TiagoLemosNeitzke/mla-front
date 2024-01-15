@@ -13,7 +13,7 @@ use App\Http\Livewire\Product\Index as ProductIndex;
 Route::get('loja/produtos', Productlist::class);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/dashboard', function () {
@@ -24,7 +24,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    
+
     Route::get('/category/index', CategoryIndex::class)->name('category.index');
     Route::get('/category/create', CategoryCreate::class)->name('category.create');
     Route::get('/category/{category}/edit', CategoryUpdate::class)->name('category.update');
